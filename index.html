@@ -29,10 +29,10 @@
 
    
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 ">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50 overflow-x-hidden ">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex items-center">
@@ -52,7 +52,7 @@
                         <a href="#services" class="text-gray-700 hover:text-primary transition duration-300">خدماتنا</a>
                         <a href="#about" class="text-gray-700 hover:text-primary transition duration-300">من نحن</a>
                         <a href="#contact" class="text-gray-700 hover:text-primary transition duration-300">اتصل بنا</a>
-                        <a href="tel:+966500000000" class="btn-primary text-white px-6 py-2 rounded-lg font-semibold">
+                        <a href="tel:+0565265233" class="btn-primary text-white px-6 py-2 rounded-lg font-semibold">
                             <i class="fas fa-phone ml-2"></i>
                             اتصل الآن
                         </a>
@@ -69,7 +69,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t ">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-primary">الرئيسية</a>
                 <a href="#products" class="block px-3 py-2 text-gray-700 hover:text-primary">منتجاتنا</a>
@@ -85,8 +85,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-bg min-h-screen flex items-center pt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-16 ">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full ">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="text-white animate-fade-in">
                     <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -98,7 +98,7 @@
                         نوفر أحدث تقنيات كاميرات المراقبة مع خدمات التركيب والصيانة الاحترافية في جميع أنحاء المملكة العربية السعودية
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#contact" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg text-center">
+                        <a href="tel:+0565265233" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg text-center">
                             <i class="fas fa-phone ml-2"></i>
                             احصل على استشارة مجانية
                         </a>
@@ -125,6 +125,15 @@
             </div>
         </div>
     </section>
+    <script>
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
 
     <!-- Services Section -->
     <section id="services" class="py-20 bg-white">
@@ -401,6 +410,432 @@
             </div>
         </div>
     </section>
+          <section class="hero-background py-20 text-white relative">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="floating-icon text-6xl mb-6">
+                <i class="fas fa-video text-white"></i>
+            </div>
+            <h1 class="text-5xl font-bold mb-6 leading-tight">
+                كاميرات المراقبة المتطورة
+            </h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                اكتشف أحدث تقنيات المراقبة والأمان مع مجموعتنا المتنوعة من كاميرات المراقبة عالية الجودة
+            </p>
+            <div class="flex justify-center space-x-4 space-x-reverse">
+                <div class="bg-white bg-opacity-20 px-6 py-3 rounded-full">
+                    <i class="fas fa-shield-alt ml-2"></i>
+                    <span>حماية متطورة</span>
+                </div>
+                <div class="bg-white bg-opacity-20 px-6 py-3 rounded-full">
+                    <i class="fas fa-eye ml-2"></i>
+                    <span>مراقبة 24/7</span>
+                </div>
+                <div class="bg-white bg-opacity-20 px-6 py-3 rounded-full">
+                    <i class="fas fa-wifi ml-2"></i>
+                    <span>اتصال ذكي</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="filter-btn active px-6 py-3 rounded-full bg-gray-200 hover:bg-gray-300 font-semibold" data-filter="all">
+                    <i class="fas fa-th-large ml-2"></i>
+                    جميع الكاميرات
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-full bg-gray-200 hover:bg-gray-300 font-semibold" data-filter="indoor">
+                    <i class="fas fa-home ml-2"></i>
+                    كاميرات داخلية
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-full bg-gray-200 hover:bg-gray-300 font-semibold" data-filter="outdoor">
+                    <i class="fas fa-tree ml-2"></i>
+                    كاميرات خارجية
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-full bg-gray-200 hover:bg-gray-300 font-semibold" data-filter="wireless">
+                    <i class="fas fa-wifi ml-2"></i>
+                    كاميرات لاسلكية
+                </button>
+               
+            </div>
+
+            <!-- Cameras Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="cameras-grid">
+                <!-- Camera 1 -->
+                <div class="camera-card rounded-2xl p-6 camera-item" data-category="indoor">
+                    <div class="relative mb-6">
+                        <div class="camera-image-placeholder rounded-xl">
+                            <i class="fas fa-video text-6xl text-gray-400"></i>
+                        </div>
+                        <div class="feature-badge absolute -top-2 -right-2 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            الأكثر مبيعاً
+                        </div>
+                        <div class="category-icon absolute -top-3 -left-3 w-12 h-12 rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">كاميرا داخلية 4K</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        كاميرا مراقبة داخلية بدقة 4K مع تقنية الرؤية الليلية المتطورة ومراقبة الحركة الذكية
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-eye text-blue-500 mb-1"></i>
+                            <div class="text-sm font-semibold">دقة 4K</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-moon text-purple-500 mb-1"></i>
+                            <div class="text-sm font-semibold">رؤية ليلية</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-running text-green-500 mb-1"></i>
+                            <div class="text-sm font-semibold">كشف الحركة</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-microphone text-red-500 mb-1"></i>
+                            <div class="text-sm font-semibold">تسجيل صوت</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="price-tag text-white px-4 py-2 rounded-full font-bold">
+                            1,200 ريال
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <!-- Camera 2 -->
+                <div class="camera-card rounded-2xl p-6 camera-item" data-category="outdoor">
+                    <div class="relative mb-6">
+                        <div class="camera-image-placeholder rounded-xl">
+                            <i class="fas fa-video text-6xl text-gray-400"></i>
+                        </div>
+                        <div class="feature-badge absolute -top-2 -right-2 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            مقاوم للماء
+                        </div>
+                        <div class="category-icon absolute -top-3 -left-3 w-12 h-12 rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">كاميرا خارجية IP67</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        كاميرا مراقبة خارجية مقاومة للماء والغبار مع تقنية الذكاء الاصطناعي لتمييز الأشخاص والمركبات
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-tint text-blue-500 mb-1"></i>
+                            <div class="text-sm font-semibold">IP67</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-brain text-purple-500 mb-1"></i>
+                            <div class="text-sm font-semibold">ذكاء اصطناعي</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-thermometer-half text-orange-500 mb-1"></i>
+                            <div class="text-sm font-semibold">-30°C إلى +60°C</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-expand-arrows-alt text-green-500 mb-1"></i>
+                            <div class="text-sm font-semibold">زووم 10X</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="price-tag text-white px-4 py-2 rounded-full font-bold">
+                            1,800 ريال
+                        </div>
+                      
+                    </div>
+                </div>
+
+                <!-- Camera 3 -->
+                <div class="camera-card rounded-2xl p-6 camera-item" data-category="wireless">
+                    <div class="relative mb-6">
+                        <div class="camera-image-placeholder rounded-xl">
+                            <i class="fas fa-video text-6xl text-gray-400"></i>
+                        </div>
+                        <div class="feature-badge absolute -top-2 -right-2 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            بطارية طويلة
+                        </div>
+                        <div class="category-icon absolute -top-3 -left-3 w-12 h-12 rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">كاميرا لاسلكية ذكية</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        كاميرا لاسلكية بالكامل مع بطارية تدوم 6 أشهر وإمكانية الشحن بالطاقة الشمسية
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-battery-full text-green-500 mb-1"></i>
+                            <div class="text-sm font-semibold">6 أشهر</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-sun text-yellow-500 mb-1"></i>
+                            <div class="text-sm font-semibold">طاقة شمسية</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-cloud text-blue-500 mb-1"></i>
+                            <div class="text-sm font-semibold">تخزين سحابي</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-mobile-alt text-purple-500 mb-1"></i>
+                            <div class="text-sm font-semibold">تطبيق ذكي</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="price-tag text-white px-4 py-2 rounded-full font-bold">
+                            2,200 ريال
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Camera 4 -->
+                <div class="camera-card rounded-2xl p-6 camera-item" data-category="ptz">
+                    <div class="relative mb-6">
+                        <div class="camera-image-placeholder rounded-xl">
+                            <i class="fas fa-video text-6xl text-gray-400"></i>
+                        </div>
+                        <div class="feature-badge absolute -top-2 -right-2 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            احترافية
+                        </div>
+                        <div class="category-icon absolute -top-3 -left-3 w-12 h-12 rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">كاميرا PTZ احترافية</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        كاميرا PTZ بتحكم كامل في الحركة والزووم مع تتبع تلقائي للأهداف وجودة تسجيل 4K
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-arrows-alt text-blue-500 mb-1"></i>
+                            <div class="text-sm font-semibold">دوران 360°</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-search-plus text-green-500 mb-1"></i>
+                            <div class="text-sm font-semibold">زووم 30X</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-crosshairs text-red-500 mb-1"></i>
+                            <div class="text-sm font-semibold">تتبع تلقائي</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-cog text-gray-500 mb-1"></i>
+                            <div class="text-sm font-semibold">تحكم عن بُعد</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="price-tag text-white px-4 py-2 rounded-full font-bold">
+                            3,500 ريال
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <!-- Camera 5 -->
+                <div class="camera-card rounded-2xl p-6 camera-item" data-category="indoor">
+                    <div class="relative mb-6">
+                        <div class="camera-image-placeholder rounded-xl">
+                            <i class="fas fa-video text-6xl text-gray-400"></i>
+                        </div>
+                        <div class="feature-badge absolute -top-2 -right-2 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            صغيرة الحجم
+                        </div>
+                        <div class="category-icon absolute -top-3 -left-3 w-12 h-12 rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">كاميرا مصغرة ذكية</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        كاميرا مراقبة صغيرة الحجم مثالية للمساحات الضيقة مع إمكانية التحكم الصوتي
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-cube text-blue-500 mb-1"></i>
+                            <div class="text-sm font-semibold">حجم صغير</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-microphone-alt text-purple-500 mb-1"></i>
+                            <div class="text-sm font-semibold">تحكم صوتي</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-plug text-green-500 mb-1"></i>
+                            <div class="text-sm font-semibold">تركيب سهل</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-bell text-red-500 mb-1"></i>
+                            <div class="text-sm font-semibold">إنذار ذكي</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="price-tag text-white px-4 py-2 rounded-full font-bold">
+                            900 ريال
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Camera 6 -->
+                <div class="camera-card rounded-2xl p-6 camera-item" data-category="outdoor">
+                    <div class="relative mb-6">
+                        <div class="camera-image-placeholder rounded-xl">
+                            <i class="fas fa-video text-6xl text-gray-400"></i>
+                        </div>
+                        <div class="feature-badge absolute -top-2 -right-2 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            رؤية حرارية
+                        </div>
+                        <div class="category-icon absolute -top-3 -left-3 w-12 h-12 rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">كاميرا حرارية متطورة</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        كاميرا مراقبة مع تقنية الرؤية الحرارية للكشف عن الأهداف في الظلام التام
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-thermometer-empty text-blue-500 mb-1"></i>
+                            <div class="text-sm font-semibold">رؤية حرارية</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-eye-slash text-purple-500 mb-1"></i>
+                            <div class="text-sm font-semibold">رؤية ليلية كاملة</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-crosshairs text-red-500 mb-1"></i>
+                            <div class="text-sm font-semibold">كشف دقيق</div>
+                        </div>
+                        <div class="spec-item bg-gray-50 p-3 rounded-lg">
+                            <i class="fas fa-chart-line text-green-500 mb-1"></i>
+                            <div class="text-sm font-semibold">تحليل متقدم</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="price-tag text-white px-4 py-2 rounded-full font-bold">
+                            4,500 ريال
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cameraItems = document.querySelectorAll('.camera-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                cameraItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        item.style.animation = 'fadeIn 0.5s ease-in-out';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Counter animation
+        function animateCounter(element, target) {
+            const increment = target / 100;
+            let current = 0;
+            const timer = setInterval(() => {
+                current += increment;
+                element.textContent = Math.floor(current);
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                }
+            }, 20);
+        }
+
+        // Intersection Observer for animations
+        const observero = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('stat-item')) {
+                        const counter = entry.target.querySelector('[data-count]');
+                        const target = parseInt(counter.getAttribute('data-count'));
+                        animateCounter(counter, target);
+                        observer.unobserve(entry.target);
+                    }
+                }
+            });
+        });
+
+        // Observe stat items
+        document.querySelectorAll('.stat-item').forEach(item => {
+            observero.observe(item);
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('button').forEach(btn => {
+            if (btn.textContent.includes('إضافة للسلة')) {
+                btn.addEventListener('click', function() {
+                    this.innerHTML = '<i class="fas fa-check ml-2"></i>تم الإضافة';
+                    this.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+                    this.classList.add('bg-green-600', 'hover:bg-green-700');
+                    
+                    setTimeout(() => {
+                        this.innerHTML = '<i class="fas fa-cart-plus ml-2"></i>إضافة للسلة';
+                        this.classList.remove('bg-green-600', 'hover:bg-green-700');
+                        this.classList.add('bg-blue-600', 'hover:bg-blue-700');
+                    }, 2000);
+                });
+            }
+        });
+
+        // Add CSS animation for fadeIn
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Loading animation on page load
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.camera-card').forEach((card, index) => {
+                card.style.animation = `fadeIn 0.6s ease-in-out ${index * 0.1}s both`;
+            });
+        });
+    </script>
     <section class="py-16 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 relative overflow-hidden">
     <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-10">
@@ -531,10 +966,10 @@
             </div>
         </div>
 
-        
+   
 
         <!-- Contact Section -->
-        <div class="mt-16 text-center animate-fade-in">
+        <!-- <div class="mt-16 text-center animate-fade-in">
             <div class="bg-white bg-opacity-15 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-30 inline-block">
                 <h3 class="text-3xl font-bold text-white mb-6">تواصل معنا الآن</h3>
                 <div class="flex flex-wrap justify-center gap-6 mb-8">
@@ -556,7 +991,7 @@
                     احصل على استشارة مجانية
                 </button>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 
@@ -648,7 +1083,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-primary text-white">
+    <!-- <section id="contact" class="py-20 bg-primary text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4">تواصل معنا</h2>
@@ -656,7 +1091,7 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Contact Info -->
+                
                 <div>
                     <h3 class="text-2xl font-bold mb-8">معلومات التواصل</h3>
                     
@@ -703,7 +1138,6 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
                 <div class="bg-white text-gray-800 p-8 rounded-xl">
                     <h3 class="text-2xl font-bold mb-6 text-primary">احصل على استشارة مجانية</h3>
                     
@@ -747,7 +1181,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
      <section class="py-20 px-4">
         <div class="max-w-7xl mx-auto">
@@ -998,22 +1432,16 @@
                 </div>
             </div>
 
-            <!-- Load More Button -->
-            <div class="text-center mt-12">
-                <button class="gradient-bg text-white px-12 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                    <i class="fas fa-plus ml-2"></i>
-                    عرض المزيد من المشاريع
-                </button>
-            </div>
+          
         </div>
     </section>
       <!-- Lightbox Modal -->
-    <div class="lightbox" id="lightbox">
+    <!-- <div class="lightbox" id="lightbox">
         <div class="lightbox-content">
             <span class="lightbox-close" id="lightboxClose">&times;</span>
             <img src="" alt="" id="lightboxImg">
         </div>
-    </div>
+    </div> -->
      <script>
         // Intersection Observer for animations
         const observerOptions = {
@@ -1415,7 +1843,7 @@
             </div>
         </div>
     </section>
- <script>
+    <script>
         // Initialize Charts
         document.addEventListener('DOMContentLoaded', function() {
             // Performance Chart
@@ -1670,10 +2098,7 @@
             </div>
         </div>
     </section>
-      <!-- Floating Particles Background -->
-    <div class="floating-particles">
-        <!-- Particles will be generated by JavaScript -->
-    </div>
+ 
 
      <!-- FAQ Section -->
     <section class="py-20 relative overflow-hidden">
@@ -1703,566 +2128,534 @@
             </div>
             
             <!-- FAQ Items -->
-            <div class="max-w-4xl mx-auto space-y-6">
+    <!-- Header Section -->
+
+    <!-- FAQ Section -->
+    <div class="py-12 sm:py-16 lg:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <div class="space-y-4 sm:space-y-6">
+                
                 <!-- FAQ Item 1 -->
-                <div class="faq-item bg-white rounded-2xl p-6 glass-effect">
-                    <div class="faq-header flex items-center justify-between cursor-pointer" onclick="toggleFAQ(1)">
-                        <div class="flex items-center">
-                            <div class="number-badge">1</div>
-                            <h3 class="text-xl font-bold text-gray-800">ما هي أنواع كاميرات المراقبة المتوفرة؟</h3>
+                <div class="faq-item bg-white rounded-xl sm:rounded-2xl shadow-lg border border-gray-200 card-hover overflow-hidden">
+                    <button class="faq-toggle w-full text-right px-4 sm:px-6 lg:px-8 py-4 sm:py-6 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 touch-target mobile-optimized" data-target="faq1">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center ml-3 sm:ml-4">
+                                    <i class="fas fa-camera text-white text-sm sm:text-base"></i>
+                                </div>
+                                <h3 class="text-base sm:text-lg lg:text-xl font-semibold text-gray-800 leading-tight">
+                                    ما هي أنواع كاميرات المراقبة المتوفرة؟
+                                </h3>
+                            </div>
+                            <i class="fas fa-chevron-down faq-icon text-gray-400 text-sm sm:text-base"></i>
                         </div>
-                        <i class="fas fa-chevron-down text-blue-500 icon-rotate" id="icon-1"></i>
-                    </div>
-                    <div class="faq-content mt-4" id="content-1">
-                        <div class="border-r-4 border-blue-500 pr-6 mr-12">
-                            <p class="text-gray-700 leading-relaxed mb-4">
-                                نوفر مجموعة واسعة من كاميرات المراقبة المتطورة:
-                            </p>
-                            <ul class="space-y-3 text-gray-700">
-                                <li class="flex items-center">
-                                    <i class="fas fa-camera text-blue-500 ml-3"></i>
-                                    <span><strong>كاميرات IP عالية الدقة:</strong> بدقة 4K و 8K مع تقنية الرؤية الليلية المتقدمة</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-wifi text-purple-500 ml-3"></i>
-                                    <span><strong>كاميرات لاسلكية:</strong> سهولة التركيب مع إمكانية المراقبة عن بُعد</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-eye text-yellow-500 ml-3"></i>
-                                    <span><strong>كاميرات PTZ:</strong> إمكانية التحكم في الاتجاه والتكبير عن بُعد</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-shield-alt text-green-500 ml-3"></i>
-                                    <span><strong>كاميرات مقاومة للطقس:</strong> حماية IP67 للأماكن الخارجية</span>
-                                </li>
+                    </button>
+                    <div id="faq1" class="faq-content">
+                        <div class="answer-text text-sm sm:text-base text-gray-600 border-t border-gray-100 pt-4 p-4 sm:pt-6">
+                            <p class="mb-3 sm:mb-4">نوفر مجموعة شاملة من كاميرات المراقبة لتناسب جميع الاحتياجات:</p>
+                            <ul class="list-disc list-inside space-y-2 mr-4">
+                                <li><strong>كاميرات IP:</strong> جودة عالية وإمكانية المراقبة عن بُعد</li>
+                                <li><strong>كاميرات AHD:</strong> تكنولوجيا متقدمة بجودة HD</li>
+                                <li><strong>كاميرات PTZ:</strong> قابلة للتحكم والتحريك في جميع الاتجاهات</li>
+                                <li><strong>كاميرات الرؤية الليلية:</strong> مراقبة فعالة في الظلام الدامس</li>
+                                <li><strong>كاميرات مقاومة للطقس:</strong> مناسبة للاستخدام الخارجي</li>
+                                <li><strong>كاميرات مخفية:</strong> للمراقبة السرية والحماية المتقدمة</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- FAQ Item 2 -->
-                <div class="faq-item bg-white rounded-2xl p-6 glass-effect">
-                    <div class="faq-header flex items-center justify-between cursor-pointer" onclick="toggleFAQ(2)">
-                        <div class="flex items-center">
-                            <div class="number-badge">2</div>
-                            <h3 class="text-xl font-bold text-gray-800">كم تستغرق عملية التركيب والتشغيل؟</h3>
+                <div class="faq-item bg-white rounded-xl sm:rounded-2xl shadow-lg border border-gray-200 card-hover overflow-hidden">
+                    <button class="faq-toggle w-full text-right px-4 sm:px-6 lg:px-8 py-4 sm:py-6 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 touch-target mobile-optimized" data-target="faq2">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center ml-3 sm:ml-4">
+                                    <i class="fas fa-tools text-white text-sm sm:text-base"></i>
+                                </div>
+                                <h3 class="text-base sm:text-lg lg:text-xl font-semibold text-gray-800 leading-tight">
+                                    كم تستغرق عملية التركيب والتشغيل؟
+                                </h3>
+                            </div>
+                            <i class="fas fa-chevron-down faq-icon text-gray-400 text-sm sm:text-base"></i>
                         </div>
-                        <i class="fas fa-chevron-down text-blue-500 icon-rotate" id="icon-2"></i>
+                    </button>
+                    <div id="faq2" class="faq-content">
+                        <div class="answer-text text-sm sm:text-base text-gray-600 border-t border-gray-100 pt-4 p-4 sm:pt-6">
+                            <p class="mb-3 sm:mb-4">نحرص على توفير خدمة تركيب سريعة ومهنية:</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                                <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800 mb-2">المنازل السكنية</h4>
+                                    <p class="text-gray-600">2-4 ساعات للتركيب الكامل</p>
+                                </div>
+                                <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800 mb-2">المكاتب والمحلات</h4>
+                                    <p class="text-gray-600">4-8 ساعات حسب الحجم</p>
+                                </div>
+                            </div>
+                            <p>تشمل الخدمة: التركيب، البرمجة، التشغيل، والتدريب على الاستخدام مع ضمان سنة كاملة.</p>
+                        </div>
                     </div>
-                    <div class="faq-content mt-4" id="content-2">
-                        <div class="border-r-4 border-purple-500 pr-6 mr-12">
-                            <p class="text-gray-700 leading-relaxed mb-4">
-                                أوقات التركيب تختلف حسب حجم المشروع وتعقيده:
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-xl sm:rounded-2xl shadow-lg border border-gray-200 card-hover overflow-hidden">
+                    <button class="faq-toggle w-full text-right px-4 sm:px-6 lg:px-8 py-4 sm:py-6 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 touch-target mobile-optimized" data-target="faq3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-full flex items-center justify-center ml-3 sm:ml-4">
+                                    <i class="fas fa-dollar-sign text-white text-sm sm:text-base"></i>
+                                </div>
+                                <h3 class="text-base sm:text-lg lg:text-xl font-semibold text-gray-800 leading-tight">
+                                    ما هي تكلفة أنظمة المراقبة؟
+                                </h3>
+                            </div>
+                            <i class="fas fa-chevron-down faq-icon text-gray-400 text-sm sm:text-base"></i>
+                        </div>
+                    </button>
+                    <div id="faq3" class="faq-content">
+                        <div class="answer-text text-sm sm:text-base text-gray-600 border-t border-gray-100 pt-4 p-4 sm:pt-6">
+                            <p class="mb-3 sm:mb-4">نقدم أسعار تنافسية تناسب جميع الميزانيات:</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+                                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-3 sm:p-4 rounded-lg border border-blue-200">
+                                    <h4 class="font-semibold text-blue-800 mb-2">الباقة الأساسية</h4>
+                                    <p class="text-blue-600 text-sm">4 كاميرات + جهاز تسجيل</p>
+                                    <p class="font-bold text-blue-800 mt-2">من 1,500 ريال</p>
+                                </div>
+                                <div class="bg-gradient-to-br from-green-50 to-green-100 p-3 sm:p-4 rounded-lg border border-green-200">
+                                    <h4 class="font-semibold text-green-800 mb-2">الباقة المتقدمة</h4>
+                                    <p class="text-green-600 text-sm">8 كاميرات + مراقبة ذكية</p>
+                                    <p class="font-bold text-green-800 mt-2">من 2,800 ريال</p>
+                                </div>
+                                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-3 sm:p-4 rounded-lg border border-purple-200">
+                                    <h4 class="font-semibold text-purple-800 mb-2">الباقة الاحترافية</h4>
+                                    <p class="text-purple-600 text-sm">16 كاميرا + نظام متكامل</p>
+                                    <p class="font-bold text-purple-800 mt-2">من 4,500 ريال</p>
+                                </div>
+                            </div>
+                            <p class="text-center bg-yellow-50 p-3 rounded-lg border border-yellow-200">
+                                <i class="fas fa-gift text-yellow-600 ml-2"></i>
+                                <strong>عرض خاص:</strong> خصم 15% على جميع الباقات + تركيب مجاني
                             </p>
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-bold text-blue-800 mb-2">
-                                        <i class="fas fa-home ml-2"></i>
-                                        المنازل الصغيرة
-                                    </h4>
-                                    <p class="text-gray-700">2-4 ساعات (2-4 كاميرات)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-xl sm:rounded-2xl shadow-lg border border-gray-200 card-hover overflow-hidden">
+                    <button class="faq-toggle w-full text-right px-4 sm:px-6 lg:px-8 py-4 sm:py-6 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 touch-target mobile-optimized" data-target="faq4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-red-500 to-pink-600 rounded-full flex items-center justify-center ml-3 sm:ml-4">
+                                    <i class="fas fa-shield-alt text-white text-sm sm:text-base"></i>
                                 </div>
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-bold text-purple-800 mb-2">
-                                        <i class="fas fa-building ml-2"></i>
-                                        الفيلات والمكاتب
+                                <h3 class="text-base sm:text-lg lg:text-xl font-semibold text-gray-800 leading-tight">
+                                    ما هو الضمان المقدم على الكاميرات؟
+                                </h3>
+                            </div>
+                            <i class="fas fa-chevron-down faq-icon text-gray-400 text-sm sm:text-base"></i>
+                        </div>
+                    </button>
+                    <div id="faq4" class="faq-content">
+                        <div class="answer-text text-sm sm:text-base text-gray-600 border-t border-gray-100 pt-4 p-4 sm:pt-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                                <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                                    <h4 class="font-semibold text-green-800 mb-2 flex items-center">
+                                        <i class="fas fa-check-circle text-green-600 ml-2"></i>
+                                        ضمان المعدات
                                     </h4>
-                                    <p class="text-gray-700">6-8 ساعات (6-12 كاميرا)</p>
+                                    <ul class="text-green-700 text-sm space-y-1">
+                                        <li>• ضمان سنتان على الكاميرات</li>
+                                        <li>• ضمان 3 سنوات على أجهزة التسجيل</li>
+                                        <li>• ضمان مدى الحياة على الكابلات</li>
+                                    </ul>
                                 </div>
-                                <div class="bg-yellow-50 p-4 rounded-lg">
-                                    <h4 class="font-bold text-yellow-800 mb-2">
-                                        <i class="fas fa-industry ml-2"></i>
-                                        المشاريع التجارية
+                                <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                                    <h4 class="font-semibold text-blue-800 mb-2 flex items-center">
+                                        <i class="fas fa-tools text-blue-600 ml-2"></i>
+                                        ضمان الخدمة
                                     </h4>
-                                    <p class="text-gray-700">1-3 أيام (أكثر من 12 كاميرا)</p>
+                                    <ul class="text-blue-700 text-sm space-y-1">
+                                        <li>• صيانة دورية مجانية سنة كاملة</li>
+                                        <li>• دعم فني 24/7</li>
+                                        <li>• استبدال فوري للقطع التالفة</li>
+                                    </ul>
                                 </div>
-                                <div class="bg-green-50 p-4 rounded-lg">
-                                    <h4 class="font-bold text-green-800 mb-2">
-                                        <i class="fas fa-cogs ml-2"></i>
-                                        التشغيل والتدريب
-                                    </h4>
-                                    <p class="text-gray-700">30-60 دقيقة إضافية</p>
-                                </div>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg border-r-4 border-blue-500">
+                                <p class="text-gray-700">
+                                    <i class="fas fa-info-circle text-blue-500 ml-2"></i>
+                                    <strong>ملاحظة مهمة:</strong> يسري الضمان من تاريخ التركيب ويشمل قطع الغيار والعمالة. نحن نؤمن بجودة منتجاتنا ونضمن لك راحة البال التامة.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- FAQ Item 3 -->
-                <div class="faq-item bg-white rounded-2xl p-6 glass-effect">
-                    <div class="faq-header flex items-center justify-between cursor-pointer" onclick="toggleFAQ(3)">
-                        <div class="flex items-center">
-                            <div class="number-badge">3</div>
-                            <h3 class="text-xl font-bold text-gray-800">ما هي أسعار كاميرات المراقبة وما المشمول في الضمان؟</h3>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-xl sm:rounded-2xl shadow-lg border border-gray-200 card-hover overflow-hidden">
+                    <button class="faq-toggle w-full text-right px-4 sm:px-6 lg:px-8 py-4 sm:py-6 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 touch-target mobile-optimized" data-target="faq5">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-full flex items-center justify-center ml-3 sm:ml-4">
+                                    <i class="fas fa-mobile-alt text-white text-sm sm:text-base"></i>
+                                </div>
+                                <h3 class="text-base sm:text-lg lg:text-xl font-semibold text-gray-800 leading-tight">
+                                    هل يمكن مراقبة الكاميرات من الهاتف المحمول؟
+                                </h3>
+                            </div>
+                            <i class="fas fa-chevron-down faq-icon text-gray-400 text-sm sm:text-base"></i>
                         </div>
-                        <i class="fas fa-chevron-down text-blue-500 icon-rotate" id="icon-3"></i>
+                    </button>
+                    <div id="faq5" class="faq-content">
+                        <div class="answer-text text-sm sm:text-base text-gray-600 border-t border-gray-100 pt-4 p-4 sm:pt-6">
+                            <p class="mb-4">نعم، توفر جميع أنظمتنا إمكانية المراقبة الذكية من الهاتف المحمول:</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                                <div class="space-y-3">
+                                    <h4 class="font-semibold text-gray-800 flex items-center">
+                                        <i class="fas fa-download text-blue-500 ml-2"></i>
+                                        التطبيقات المتاحة
+                                    </h4>
+                                    <ul class="space-y-2 text-sm">
+                                        <li class="flex items-center">
+                                            <i class="fab fa-android text-green-500 ml-2"></i>
+                                            تطبيق Android مجاني
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fab fa-apple text-gray-600 ml-2"></i>
+                                            تطبيق iOS مجاني
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-globe text-blue-500 ml-2"></i>
+                                            مراقبة عبر المتصفح
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="space-y-3">
+                                    <h4 class="font-semibold text-gray-800 flex items-center">
+                                        <i class="fas fa-cog text-purple-500 ml-2"></i>
+                                        المميزات المتقدمة
+                                    </h4>
+                                    <ul class="space-y-2 text-sm">
+                                        <li class="flex items-center">
+                                            <i class="fas fa-bell text-red-500 ml-2"></i>
+                                            تنبيهات فورية للحركة
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-video text-blue-500 ml-2"></i>
+                                            تسجيل مباشر على الهاتف
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-microphone text-green-500 ml-2"></i>
+                                            تسجيل صوتي وتحدث ثنائي
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                                <p class="text-blue-800 text-sm">
+                                    <i class="fas fa-info-circle text-blue-600 ml-2"></i>
+                                    <strong>سهولة الاستخدام:</strong> إعداد سهل في دقائق معدودة، واجهة عربية بسيطة، ومراقبة من أي مكان في العالم بجودة HD كاملة.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="faq-content mt-4" id="content-3">
-                        <div class="border-r-4 border-yellow-500 pr-6 mr-12">
-                            <div class="mb-6">
-                                <h4 class="text-lg font-bold text-gray-800 mb-3">
-                                    <i class="fas fa-tags text-yellow-500 ml-2"></i>
-                                    الأسعار (شاملة التركيب)
-                                </h4>
-                                <div class="grid md:grid-cols-3 gap-4">
-                                    <div class="bg-gray-50 p-4 rounded-lg text-center">
-                                        <div class="text-2xl font-bold text-blue-600">999 ريال</div>
-                                        <div class="text-gray-600">باقة أساسية (2 كاميرا)</div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item bg-white rounded-xl sm:rounded-2xl shadow-lg border border-gray-200 card-hover overflow-hidden">
+                    <button class="faq-toggle w-full text-right px-4 sm:px-6 lg:px-8 py-4 sm:py-6 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 touch-target mobile-optimized" data-target="faq6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full flex items-center justify-center ml-3 sm:ml-4">
+                                    <i class="fas fa-wrench text-white text-sm sm:text-base"></i>
+                                </div>
+                                <h3 class="text-base sm:text-lg lg:text-xl font-semibold text-gray-800 leading-tight">
+                                    ما هي أوقات الصيانة والدعم الفني؟
+                                </h3>
+                            </div>
+                            <i class="fas fa-chevron-down faq-icon text-gray-400 text-sm sm:text-base"></i>
+                        </div>
+                    </button>
+                    <div id="faq6" class="faq-content">
+                        <div class="answer-text text-sm sm:text-base text-gray-600 border-t border-gray-100 pt-4 p-4 sm:pt-6">
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-4">
+                                <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                                    <h4 class="font-semibold text-green-800 mb-3 flex items-center">
+                                        <i class="fas fa-clock text-green-600 ml-2"></i>
+                                        ساعات العمل
+                                    </h4>
+                                    <div class="space-y-2 text-sm text-green-700">
+                                        <div class="flex justify-between items-center">
+                                            <span>السبت - الخميس</span>
+                                            <span class="font-medium">8:00 ص - 10:00 م</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span>الجمعة</span>
+                                            <span class="font-medium">2:00 م - 10:00 م</span>
+                                        </div>
+                                        <div class="bg-green-100 p-2 rounded mt-3">
+                                            <span class="text-xs font-medium">طوارئ 24/7 متاح</span>
+                                        </div>
                                     </div>
-                                    <div class="bg-blue-50 p-4 rounded-lg text-center border-2 border-blue-500">
-                                        <div class="text-2xl font-bold text-blue-600">1,999 ريال</div>
-                                        <div class="text-gray-600">باقة متقدمة (4 كاميرات)</div>
-                                        <div class="text-xs text-blue-600 font-semibold">الأكثر طلباً</div>
-                                    </div>
-                                    <div class="bg-gray-50 p-4 rounded-lg text-center">
-                                        <div class="text-2xl font-bold text-blue-600">3,999 ريال</div>
-                                        <div class="text-gray-600">باقة احترافية (8 كاميرات)</div>
+                                </div>
+                                <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                                    <h4 class="font-semibold text-blue-800 mb-3 flex items-center">
+                                        <i class="fas fa-headset text-blue-600 ml-2"></i>
+                                        طرق التواصل
+                                    </h4>
+                                    <div class="space-y-2 text-sm text-blue-700">
+                                        <div class="flex items-center">
+                                            <i class="fas fa-phone text-blue-500 ml-2 w-4"></i>
+                                            <span>920-XXX-XXXX</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <i class="fab fa-whatsapp text-green-500 ml-2 w-4"></i>
+                                            <span>واتساب فوري</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <i class="fas fa-envelope text-blue-500 ml-2 w-4"></i>
+                                            <span>البريد الإلكتروني</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <i class="fas fa-comments text-purple-500 ml-2 w-4"></i>
+                                            <span>الدردشة المباشرة</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <h4 class="text-lg font-bold text-gray-800 mb-3">
-                                    <i class="fas fa-shield-alt text-green-500 ml-2"></i>
-                                    الضمان الشامل
+                            <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                                <h4 class="font-semibold text-yellow-800 mb-2 flex items-center">
+                                    <i class="fas fa-star text-yellow-600 ml-2"></i>
+                                    خدمات الصيانة المميزة
                                 </h4>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li class="flex items-center">
-                                        <i class="fas fa-check text-green-500 ml-3"></i>
-                                        <span>ضمان شامل لمدة 3 سنوات على جميع الأجهزة</span>
-                                    </li>
-                                    <li class="flex items-center">
-                                        <i class="fas fa-check text-green-500 ml-3"></i>
-                                        <span>صيانة مجانية خلال فترة الضمان</span>
-                                    </li>
-                                    <li class="flex items-center">
-                                        <i class="fas fa-check text-green-500 ml-3"></i>
-                                        <span>استبدال فوري للأجهزة المعطلة</span>
-                                    </li>
-                                    <li class="flex items-center">
-                                        <i class="fas fa-check text-green-500 ml-3"></i>
-                                        <span>دعم فني مجاني 24/7</span>
-                                    </li>
+                                <ul class="text-yellow-700 text-sm space-y-1">
+                                    <li>• زيارة صيانة دورية كل 6 أشهر مجاناً</li>
+                                    <li>• استجابة سريعة خلال 24 ساعة للطوارئ</li>
+                                    <li>• تحديث البرامج والتطبيقات مجاناً</li>
+                                    <li>• تنظيف وفحص شامل للنظام</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- FAQ Item 4 -->
-                <div class="faq-item bg-white rounded-2xl p-6 glass-effect">
-                    <div class="faq-header flex items-center justify-between cursor-pointer" onclick="toggleFAQ(4)">
-                        <div class="flex items-center">
-                            <div class="number-badge">4</div>
-                            <h3 class="text-xl font-bold text-gray-800">ما هي التقنيات المتقدمة المتوفرة في أنظمة المراقبة؟</h3>
-                        </div>
-                        <i class="fas fa-chevron-down text-blue-500 icon-rotate" id="icon-4"></i>
-                    </div>
-                    <div class="faq-content mt-4" id="content-4">
-                        <div class="border-r-4 border-indigo-500 pr-6 mr-12">
-                            <p class="text-gray-700 leading-relaxed mb-4">
-                                نستخدم أحدث التقنيات في أنظمة المراقبة الذكية:
-                            </p>
-                            <div class="grid md:grid-cols-2 gap-6">
-                                <div class="space-y-4">
-                                    <div class="flex items-start">
-                                        <div class="bg-blue-100 p-2 rounded-lg ml-3">
-                                            <i class="fas fa-brain text-blue-600"></i>
-                                        </div>
-                                        <div>
-                                            <h5 class="font-bold text-gray-800">الذكاء الاصطناعي</h5>
-                                            <p class="text-gray-600 text-sm">تحليل الحركة وتمييز الوجوه تلقائياً</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <div class="bg-purple-100 p-2 rounded-lg ml-3">
-                                            <i class="fas fa-cloud text-purple-600"></i>
-                                        </div>
-                                        <div>
-                                            <h5 class="font-bold text-gray-800">التخزين السحابي</h5>
-                                            <p class="text-gray-600 text-sm">نسخ احتياطي آمن في السحابة</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <div class="bg-green-100 p-2 rounded-lg ml-3">
-                                            <i class="fas fa-mobile-alt text-green-600"></i>
-                                        </div>
-                                        <div>
-                                            <h5 class="font-bold text-gray-800">تطبيق الهاتف</h5>
-                                            <p class="text-gray-600 text-sm">مراقبة مباشرة من أي مكان</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="space-y-4">
-                                    <div class="flex items-start">
-                                        <div class="bg-yellow-100 p-2 rounded-lg ml-3">
-                                            <i class="fas fa-bell text-yellow-600"></i>
-                                        </div>
-                                        <div>
-                                            <h5 class="font-bold text-gray-800">التنبيهات الذكية</h5>
-                                            <p class="text-gray-600 text-sm">إشعارات فورية عند اكتشاف الحركة</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <div class="bg-red-100 p-2 rounded-lg ml-3">
-                                            <i class="fas fa-moon text-red-600"></i>
-                                        </div>
-                                        <div>
-                                            <h5 class="font-bold text-gray-800">الرؤية الليلية</h5>
-                                            <p class="text-gray-600 text-sm">وضوح تام في الظلام التام</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <div class="bg-indigo-100 p-2 rounded-lg ml-3">
-                                            <i class="fas fa-lock text-indigo-600"></i>
-                                        </div>
-                                        <div>
-                                            <h5 class="font-bold text-gray-800">التشفير المتقدم</h5>
-                                            <p class="text-gray-600 text-sm">حماية البيانات بأعلى معايير الأمان</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- FAQ Item 5 -->
-                <div class="faq-item bg-white rounded-2xl p-6 glass-effect">
-                    <div class="faq-header flex items-center justify-between cursor-pointer" onclick="toggleFAQ(5)">
-                        <div class="flex items-center">
-                            <div class="number-badge">5</div>
-                            <h3 class="text-xl font-bold text-gray-800">كيف يمكنني الحصول على خدمة الصيانة والدعم الفني؟</h3>
-                        </div>
-                        <i class="fas fa-chevron-down text-blue-500 icon-rotate" id="icon-5"></i>
-                    </div>
-                    <div class="faq-content mt-4" id="content-5">
-                        <div class="border-r-4 border-green-500 pr-6 mr-12">
-                            <p class="text-gray-700 leading-relaxed mb-4">
-                                نوفر خدمات دعم شاملة لضمان عمل أنظمة المراقبة بكفاءة عالية:
-                            </p>
-                            <div class="grid md:grid-cols-2 gap-6">
-                                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl">
-                                    <h4 class="font-bold text-blue-800 mb-4 flex items-center">
-                                        <i class="fas fa-headset ml-2"></i>
-                                        الدعم الفني
-                                    </h4>
-                                    <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center">
-                                            <i class="fas fa-phone text-blue-500 ml-2"></i>
-                                            <span>خط ساخن 24/7: 8001234567</span>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <i class="fas fa-envelope text-blue-500 ml-2"></i>
-                                            <span>البريد الإلكتروني: support@cameras.sa</span>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <i class="fas fa-comments text-blue-500 ml-2"></i>
-                                            <span>دردشة مباشرة على الموقع</span>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <i class="fas fa-video text-blue-500 ml-2"></i>
-                                            <span>دعم مرئي عن بُعد</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl">
-                                    <h4 class="font-bold text-green-800 mb-4 flex items-center">
-                                        <i class="fas fa-tools ml-2"></i>
-                                        خدمات الصيانة
-                                    </h4>
-                                    <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center">
-                                            <i class="fas fa-calendar text-green-500 ml-2"></i>
-                                            <span>صيانة دورية مجدولة</span>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <i class="fas fa-ambulance text-green-500 ml-2"></i>
-                                            <span>خدمة طوارئ سريعة</span>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <i class="fas fa-sync text-green-500 ml-2"></i>
-                                            <span>تحديث البرامج المجاني</span>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <i class="fas fa-chart-line text-green-500 ml-2"></i>
-                                            <span>تقارير الأداء الدورية</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-                                <div class="flex items-center">
-                                    <i class="fas fa-clock text-yellow-600 text-xl ml-3"></i>
-                                    <div>
-                                        <h5 class="font-bold text-yellow-800">أوقات الاستجابة</h5>
-                                        <p class="text-yellow-700">استجابة فورية للطوارئ خلال 30 دقيقة داخل الرياض، و2-4 ساعات في المناطق الأخرى</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- FAQ Item 6 -->
-                <div class="faq-item bg-white rounded-2xl p-6 glass-effect">
-                    <div class="faq-header flex items-center justify-between cursor-pointer" onclick="toggleFAQ(6)">
-                        <div class="flex items-center">
-                            <div class="number-badge">6</div>
-                            <h3 class="text-xl font-bold text-gray-800">هل يمكنني مراقبة الكاميرات من خلال الهاتف المحمول؟</h3>
-                        </div>
-                        <i class="fas fa-chevron-down text-blue-500 icon-rotate" id="icon-6"></i>
-                    </div>
-                    <div class="faq-content mt-4" id="content-6">
-                        <div class="border-r-4 border-blue-500 pr-6 mr-12">
-                            <p class="text-gray-700 leading-relaxed mb-4">
-                                بالطبع! نوفر تطبيقات متقدمة للهواتف الذكية تتيح لك المراقبة المباشرة:
-                            </p>
-                            <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl mb-4">
-                                <h4 class="font-bold text-gray-800 mb-3 flex items-center">
-                                    <i class="fas fa-mobile-alt text-blue-600 ml-2"></i>
-                                    مميزات التطبيق
-                                </h4>
-                                <div class="grid md:grid-cols-2 gap-4">
-                                    <ul class="space-y-2">
-                                        <li class="flex items-center text-gray-700">
-                                            <i class="fas fa-eye text-blue-500 ml-2"></i>
-                                            <span>مراقبة مباشرة عالية الجودة</span>
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <i class="fas fa-play text-purple-500 ml-2"></i>
-                                            <span>تسجيل وحفظ الفيديوهات</span>
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <i class="fas fa-expand text-green-500 ml-2"></i>
-                                            <span>تكبير وتصغير الصورة</span>
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <i class="fas fa-volume-up text-yellow-500 ml-2"></i>
-                                            <span>الاستماع للصوت المحيط</span>
-                                        </li>
-                                    </ul>
-                                    <ul class="space-y-2">
-                                        <li class="flex items-center text-gray-700">
-                                            <i class="fas fa-bell text-red-500 ml-2"></i>
-                                            <span>إشعارات فورية للحركة</span>
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <i class="fas fa-share text-indigo-500 ml-2"></i>
-                                            <span>مشاركة الفيديوهات</span>
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <i class="fas fa-users text-pink-500 ml-2"></i>
-                                            <span>إضافة مستخدمين متعددين</span>
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <i class="fas fa-cog text-gray-500 ml-2"></i>
-                                            <span>التحكم في إعدادات الكاميرات</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="flex justify-center space-x-4 space-x-reverse">
-                                <div class="text-center">
-                                    <div class="bg-black text-white px-6 py-3 rounded-lg font-semibold mb-2">
-                                        <i class="fab fa-apple ml-2"></i>
-                                        متوفر على App Store
-                                    </div>
-                                    <p class="text-sm text-gray-600">iOS 12.0 أو أحدث</p>
-                                </div>
-                                <div class="text-center">
-                                    <div class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold mb-2">
-                                        <i class="fab fa-google-play ml-2"></i>
-                                        متوفر على Google Play
-                                    </div>
-                                    <p class="text-sm text-gray-600">Android 8.0 أو أحدث</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+
                 <!-- FAQ Item 7 -->
-                <div class="faq-item bg-white rounded-2xl p-6 glass-effect">
-                    <div class="faq-header flex items-center justify-between cursor-pointer" onclick="toggleFAQ(7)">
-                        <div class="flex items-center">
-                            <div class="number-badge">7</div>
-                            <h3 class="text-xl font-bold text-gray-800">ما هي المدة المطلوبة للحصول على عرض سعر وموعد التركيب؟</h3>
+                <div class="faq-item bg-white rounded-xl sm:rounded-2xl shadow-lg border border-gray-200 card-hover overflow-hidden">
+                    <button class="faq-toggle w-full text-right px-4 sm:px-6 lg:px-8 py-4 sm:py-6 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 touch-target mobile-optimized" data-target="faq7">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full flex items-center justify-center ml-3 sm:ml-4">
+                                    <i class="fas fa-brain text-white text-sm sm:text-base"></i>
+                                </div>
+                                <h3 class="text-base sm:text-lg lg:text-xl font-semibold text-gray-800 leading-tight">
+                                    هل تدعم الكاميرات الذكاء الاصطناعي؟
+                                </h3>
+                            </div>
+                            <i class="fas fa-chevron-down faq-icon text-gray-400 text-sm sm:text-base"></i>
                         </div>
-                        <i class="fas fa-chevron-down text-blue-500 icon-rotate" id="icon-7"></i>
-                    </div>
-                    <div class="faq-content mt-4" id="content-7">
-                        <div class="border-r-4 border-orange-500 pr-6 mr-12">
-                            <p class="text-gray-700 leading-relaxed mb-4">
-                                نحرص على تقديم خدمة سريعة ومتميزة لعملائنا:
-                            </p>
-                            <div class="space-y-4">
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-bold text-blue-800 mb-2 flex items-center">
-                                        <i class="fas fa-calculator ml-2"></i>
-                                        عرض السعر
-                                    </h4>
-                                    <p class="text-gray-700">
-                                        • عرض سعر مبدئي فوري عبر الموقع أو الهاتف<br>
-                                        • زيارة مجانية للمعاينة خلال 24 ساعة<br>
-                                        • عرض سعر نهائي مفصل خلال 2-3 أيام عمل
-                                    </p>
+                    </button>
+                    <div id="faq7" class="faq-content">
+                        <div class="answer-text text-sm sm:text-base text-gray-600 border-t border-gray-100 pt-4 p-4 sm:pt-6">
+                            <p class="mb-4">نعم، نوفر أحدث تقنيات الذكاء الاصطناعي في كاميرات المراقبة:</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-4 rounded-lg border border-purple-200">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-user-check text-purple-600 ml-2"></i>
+                                        <h4 class="font-semibold text-purple-800">التعرف على الوجوه</h4>
+                                    </div>
+                                    <p class="text-purple-700 text-sm">تحديد الأشخاص المعروفين وإرسال تنبيهات للغرباء</p>
                                 </div>
-                                <div class="bg-green-50 p-4 rounded-lg">
-                                    <h4 class="font-bold text-green-800 mb-2 flex items-center">
-                                        <i class="fas fa-calendar-check ml-2"></i>
-                                        موعد التركيب
-                                    </h4>
-                                    <p class="text-gray-700">
-                                        • إمكانية الحجز خلال 1-2 أسبوع من تأكيد الطلب<br>
-                                        • مواعيد مرنة تناسب جدولك الزمني<br>
-                                        • خدمة طوارئ متاحة خلال 24-48 ساعة
-                                    </p>
+                                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-lg border border-blue-200">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-running text-blue-600 ml-2"></i>
+                                        <h4 class="font-semibold text-blue-800">كشف الحركة الذكي</h4>
+                                    </div>
+                                    <p class="text-blue-700 text-sm">تمييز بين الحركة البشرية والحيوانية والأجسام</p>
                                 </div>
-                                <div class="bg-yellow-50 p-4 rounded-lg">
-                                    <h4 class="font-bold text-yellow-800 mb-2 flex items-center">
-                                        <i class="fas fa-rocket ml-2"></i>
-                                        الخدمة السريعة
-                                    </h4>
-                                    <p class="text-gray-700">
-                                        • استشارة هاتفية مجانية فورية<br>
-                                        • إمكانية الحجز والدفع أونلاين<br>
-                                        • تأكيد الموعد عبر الرسائل النصية والواتساب
-                                    </p>
+                                <div class="bg-gradient-to-br from-green-50 to-green-100 p-4 rounded-lg border border-green-200">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-car text-green-600 ml-2"></i>
+                                        <h4 class="font-semibold text-green-800">تتبع المركبات</h4>
+                                    </div>
+                                    <p class="text-green-700 text-sm">قراءة لوحات السيارات وتتبع المركبات</p>
                                 </div>
+                            </div>
+                            <div class="bg-indigo-50 p-4 rounded-lg border border-indigo-200 mb-4">
+                                <h4 class="font-semibold text-indigo-800 mb-2 flex items-center">
+                                    <i class="fas fa-robot text-indigo-600 ml-2"></i>
+                                    التحليل الذكي المتقدم
+                                </h4>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-indigo-700">
+                                    <div>• كشف التجمعات والازدحام</div>
+                                    <div>• تحليل سلوك الأشخاص</div>
+                                    <div>• كشف الأجسام المتروكة</div>
+                                    <div>• التعرف على الإيماءات</div>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg border-r-4 border-purple-500">
+                                <p class="text-gray-700 text-sm">
+                                    <i class="fas fa-lightbulb text-purple-500 ml-2"></i>
+                                    <strong>ميزة حصرية:</strong> نظامنا الذكي يتعلم من البيانات ويحسن دقة التنبيهات تلقائياً، مما يقلل من الإنذارات الكاذبة بنسبة تصل إلى 95%.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Contact CTA -->
-            <div class="text-center mt-16">
-                <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 glass-effect">
-                    <h3 class="text-2xl font-bold text-white mb-4">لم تجد إجابة على سؤالك؟</h3>
-                    <p class="text-blue-100 mb-6">تواصل معنا الآن للحصول على استشارة مجانية ومفصلة</p>
-                    <div class="flex flex-col md:flex-row gap-4 justify-center">
-                        <a href="tel:8001234567" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-colors duration-300 flex items-center justify-center">
-                            <i class="fas fa-phone ml-2"></i>
-                            اتصل الآن: 8001234567
-                        </a>
-                        <a href="https://wa.me/966501234567" class="bg-green-500 text-white px-8 py-3 rounded-full font-bold hover:bg-green-600 transition-colors duration-300 flex items-center justify-center">
-                            <i class="fab fa-whatsapp ml-2"></i>
-                            واتساب: 966501234567
-                        </a>
+
+                <!-- FAQ Item 8 -->
+                <div class="faq-item bg-white rounded-xl sm:rounded-2xl shadow-lg border border-gray-200 card-hover overflow-hidden">
+                    <button class="faq-toggle w-full text-right px-4 sm:px-6 lg:px-8 py-4 sm:py-6 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 touch-target mobile-optimized" data-target="faq8">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-pink-500 to-rose-600 rounded-full flex items-center justify-center ml-3 sm:ml-4">
+                                    <i class="fas fa-headphones text-white text-sm sm:text-base"></i>
+                                </div>
+                                <h3 class="text-base sm:text-lg lg:text-xl font-semibold text-gray-800 leading-tight">
+                                    كيف يمكن التواصل لطلب الخدمة؟
+                                </h3>
+                            </div>
+                            <i class="fas fa-chevron-down faq-icon text-gray-400 text-sm sm:text-base"></i>
+                        </div>
+                    </button>
+                    <div id="faq8" class="faq-content">
+                        <div class="answer-text text-sm sm:text-base text-gray-600 border-t border-gray-100 pt-4 p-4 sm:pt-6">
+                            <p class="mb-4 text-center text-gray-700">نحن متاحون لخدمتك بعدة طرق سهلة ومريحة:</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                                <a href="tel:920000000" class="block bg-gradient-to-r from-green-500 to-teal-600 text-white p-4 rounded-lg hover:from-green-600 hover:to-teal-700 transition-all duration-300 transform hover:scale-105">
+                                    <div class="flex items-center justify-center">
+                                        <i class="fas fa-phone text-2xl ml-3"></i>
+                                        <div class="text-center">
+                                            <h4 class="font-semibold text-lg">اتصل الآن</h4>
+                                            <p class="text-sm opacity-90">920-XXX-XXXX</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://wa.me/966500000000" class="block bg-gradient-to-r from-green-600 to-green-700 text-white p-4 rounded-lg hover:from-green-700 hover:to-green-800 transition-all duration-300 transform hover:scale-105">
+                                    <div class="flex items-center justify-center">
+                                        <i class="fab fa-whatsapp text-2xl ml-3"></i>
+                                        <div class="text-center">
+                                            <h4 class="font-semibold text-lg">واتساب</h4>
+                                            <p class="text-sm opacity-90">رد فوري</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="space-y-3 mb-4">
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-envelope text-blue-500 text-xl w-8"></i>
+                                    <div class="mr-3">
+                                        <h4 class="font-medium text-gray-800">البريد الإلكتروني</h4>
+                                        <p class="text-sm text-gray-600">info@cctv-company.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-map-marker-alt text-red-500 text-xl w-8"></i>
+                                    <div class="mr-3">
+                                        <h4 class="font-medium text-gray-800">زيارة المعرض</h4>
+                                        <p class="text-sm text-gray-600">الرياض - حي الملك فهد - شارع الأمير سلطان</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-comments text-purple-500 text-xl w-8"></i>
+                                    <div class="mr-3">
+                                        <h4 class="font-medium text-gray-800">الدردشة المباشرة</h4>
+                                        <p class="text-sm text-gray-600">متاح على الموقع الإلكتروني</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-lg border border-blue-200">
+                                <div class="flex items-center justify-center mb-2">
+                                    <i class="fas fa-gift text-blue-600 text-xl ml-2"></i>
+                                    <h4 class="font-semibold text-blue-800">عرض خاص للمتصلين الآن</h4>
+                                </div>
+                                <p class="text-center text-blue-700 text-sm">
+                                    احصل على خصم 20% عند الطلب خلال 24 ساعة + استشارة مجانية + كشف موقع مجاني
+                                </p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="gradient-bg py-12 sm:py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 text-shadow">
+                    هل لديك سؤال آخر؟
+                </h2>
+                <p class="text-lg sm:text-xl text-white/90 mb-6 sm:mb-8">
+                    فريق الخبراء جاهز للإجابة على جميع استفساراتك وتقديم الاستشارة المجانية
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center w-100">
+                    <a href="tel:0565265233" class="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg w-full sm:w-auto">
+                        <i class="fas fa-phone ml-2"></i>
+                        اتصل الآن
+                    </a>
+                    <a href="https://wa.me/0565265233" class="bg-green-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg w-full sm:w-auto">
+                        <i class="fab fa-whatsapp ml-2"></i>
+                        واتساب
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
     </section>
+  
     <script>
-        function toggleFAQ(id) {
-            const content = document.getElementById(`content-${id}`);
-            const icon = document.getElementById(`icon-${id}`);
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.faq-toggle');
             
-            // Close all other FAQs
-            for (let i = 1; i <= 7; i++) {
-                if (i !== id) {
-                    const otherContent = document.getElementById(`content-${i}`);
-                    const otherIcon = document.getElementById(`icon-${i}`);
-                    otherContent.classList.remove('open');
-                    otherIcon.classList.remove('rotated');
-                }
-            }
-            
-            // Toggle current FAQ
-            content.classList.toggle('open');
-            icon.classList.toggle('rotated');
-            
-            // Add smooth scroll effect
-            if (content.classList.contains('open')) {
-                setTimeout(() => {
-                    content.scrollIntoView({ 
-                        behavior: 'smooth', 
-                        block: 'nearest' 
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const content = document.getElementById(targetId);
+                    const item = this.closest('.faq-item');
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all other items
+                    document.querySelectorAll('.faq-item').forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            const otherContent = otherItem.querySelector('.faq-content');
+                            otherContent.classList.remove('active');
+                            otherContent.style.maxHeight = '0px';
+                        }
                     });
-                }, 100);
-            }
-        }
-        
-        // Add hover effects
-        document.querySelectorAll('.faq-item').forEach(item => {
-            item.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px) scale(1.02)';
+                    
+                    // Toggle current item
+                    if (isActive) {
+                        item.classList.remove('active');
+                        content.classList.remove('active');
+                        content.style.maxHeight = '0px';
+                    } else {
+                        item.classList.add('active');
+                        content.classList.add('active');
+                        
+                        // Set max-height to scrollHeight for smooth animation
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        
+                        // Recalculate height after transition to handle dynamic content
+                        setTimeout(() => {
+                            if (content.classList.contains('active')) {
+                                content.style.maxHeight = content.scrollHeight + 'px';
+                            }
+                        }, 300);
+                    }
+                });
             });
             
-            item.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
+            // Handle window resize to recalculate heights
+            window.addEventListener('resize', function() {
+                document.querySelectorAll('.faq-content.active').forEach(content => {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                });
             });
         });
-        
-        // Add scroll animation
-        const observerOptionss = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observerr = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptionss);
-        
-        // Initialize scroll animations
-        document.querySelectorAll('.faq-item').forEach((item, index) => {
-            item.style.opacity = '0';
-            item.style.transform = 'translateY(30px)';
-            item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-            observerr.observe(item);
-        });
-        
-        // Add ripple effect on click
-        document.querySelectorAll('.faq-header').forEach(header => {
-            header.addEventListener('click', function(e) {
-                const ripple = document.createElement('span');
-                const rect = this.getBoundingClientRect();
-                const size = Math.max(rect.width, rect.height);
-                const x = e.clientX - rect.left - size / 2;
-                const y = e.clientY - rect.top - size / 2;
-                
-                ripple.style.cssText = `
-                    position: absolute;
-                    width: ${size}px;
-                    height: ${size}px;
-                    left: ${x}px;
-                    top: ${y}px;
-                    background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
-                    border-radius: 50%;
-                    pointer-events: none;
-                    animation: ripple 0.6s ease-out;
-                `;
-                
-                this.style.position = 'relative';
-                this.appendChild(ripple);
-                
-                setTimeout(() => {
-                    ripple.remove();
-                }, 600);
-            });
-        });
-        
-        // Add ripple animation
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes ripple {
-                0% {
-                    transform: scale(0);
-                    opacity: 1;
-                }
-                100% {
-                    transform: scale(1);
-                    opacity: 0;
-                }
-            }
-        `;
-        document.head.appendChild(style);
     </script>
 
 
