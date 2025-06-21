@@ -2658,6 +2658,53 @@
         });
     </script>
 
+    <!-- زر الصعود للأعلى -->
+<button id="scrollToTopBtn"
+        class="hidden fixed bottom-4 right-4 z-50 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-primary-dark transition duration-300"
+        onclick="scrollToTop()"
+        aria-label="Scroll to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+<script>
+  const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+  // إظهار الزر عند التمرير
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollToTopBtn.classList.remove('hidden');
+    } else {
+      scrollToTopBtn.classList.add('hidden');
+    }
+  });
+
+  // عند الضغط يرجع لأعلى الصفحة بسلاسة
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+
+<!-- زرين واتساب واتصال   -->
+<div class="fixed bottom-4 left-4 z-50 flex flex-col gap-3">
+
+  <!-- زر واتساب -->
+  <a href="https://wa.me/0565265233" target="_blank"
+     class="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full shadow-lg transition duration-300">
+    <i class="fab fa-whatsapp text-lg"></i>
+    واتساب
+  </a>
+
+  <!-- زر الاتصال -->
+  <a href="tel:+0565265233"
+     class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full shadow-lg transition duration-300">
+    <i class="fas fa-phone text-lg"></i>
+    اتصال
+  </a>
+
+</div>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
