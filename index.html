@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كاميرات المراقبة السعودية - بيع وصيانة أنظمة الأمان</title>
+    <meta name="description" content="شركة متخصصة في بيع وصيانة كاميرات المراقبة في السعودية. خدمات تركيب وصيانة احترافية مع ضمان شامل.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'cairo': ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#059669',
+                        accent: '#6b7280',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(5, 150, 105, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slide-in {
+            animation: slideIn 0.8s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #1e3a8a, #059669);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(30, 58, 138, 0.3);
+        }
+         * {
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        .animate-slide-up {
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        .animate-bounce-in {
+            animation: bounceIn 1.2s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+            70% { transform: scale(0.9); opacity: 0.9; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .icon-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center">
+                            <i class="fas fa-video text-primary text-2xl ml-2"></i>
+                            <span class="text-xl font-bold text-gray-800">كاميرات السعودية</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-8 space-x-reverse">
+                        <a href="#home" class="text-gray-700 hover:text-primary transition duration-300">الرئيسية</a>
+                        <a href="#products" class="text-gray-700 hover:text-primary transition duration-300">منتجاتنا</a>
+                        <a href="#services" class="text-gray-700 hover:text-primary transition duration-300">خدماتنا</a>
+                        <a href="#about" class="text-gray-700 hover:text-primary transition duration-300">من نحن</a>
+                        <a href="#contact" class="text-gray-700 hover:text-primary transition duration-300">اتصل بنا</a>
+                        <a href="tel:+966500000000" class="btn-primary text-white px-6 py-2 rounded-lg font-semibold">
+                            <i class="fas fa-phone ml-2"></i>
+                            اتصل الآن
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-primary">الرئيسية</a>
+                <a href="#products" class="block px-3 py-2 text-gray-700 hover:text-primary">منتجاتنا</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary">خدماتنا</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary">من نحن</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary">اتصل بنا</a>
+                <a href="tel:+966500000000" class="block px-3 py-2 btn-primary text-white rounded-lg text-center mx-3 mt-4">
+                    <i class="fas fa-phone ml-2"></i>
+                    اتصل الآن
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white animate-fade-in">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        أنظمة مراقبة
+                        <span class="text-yellow-400">متطورة</span>
+                        لحماية ممتلكاتك
+                    </h1>
+                    <p class="text-xl mb-8 text-gray-200 leading-relaxed">
+                        نوفر أحدث تقنيات كاميرات المراقبة مع خدمات التركيب والصيانة الاحترافية في جميع أنحاء المملكة العربية السعودية
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg text-center">
+                            <i class="fas fa-phone ml-2"></i>
+                            احصل على استشارة مجانية
+                        </a>
+                        <a href="#products" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg text-center hover:bg-white hover:text-primary transition duration-300">
+                            <i class="fas fa-eye ml-2"></i>
+                            تصفح منتجاتنا
+                        </a>
+                    </div>
+                </div>
+                <div class="animate-slide-in">
+                    <div class="relative">
+                        <img src="./img/istockphoto-871704344-612x612.jpg" alt="كاميرات مراقبة متطورة" class="rounded-lg shadow-2xl w-full">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-xl">
+                            <div class="flex items-center">
+                                <i class="fas fa-shield-alt text-secondary text-3xl ml-3"></i>
+                                <div>
+                                    <p class="font-bold text-gray-800">ضمان شامل</p>
+                                    <p class="text-gray-600">لمدة 3 سنوات</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">خدماتنا المتميزة</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    نقدم مجموعة شاملة من الخدمات المتخصصة في مجال أنظمة المراقبة والأمان
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="card-hover bg-gray-50 p-8 rounded-xl text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shopping-cart text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">بيع الكاميرات</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        أحدث أنواع كاميرات المراقبة من أفضل الماركات العالمية بأسعار تنافسية
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card-hover bg-gray-50 p-8 rounded-xl text-center">
+                    <div class="bg-secondary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-tools text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">التركيب والصيانة</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        فريق فني متخصص لتركيب وصيانة أنظمة المراقبة بأعلى معايير الجودة
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card-hover bg-gray-50 p-8 rounded-xl text-center">
+                    <div class="bg-yellow-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-tie text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">استشارات أمنية</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        تقييم شامل لاحتياجاتك الأمنية وتصميم النظام الأمثل لممتلكاتك
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="card-hover bg-gray-50 p-8 rounded-xl text-center">
+                    <div class="bg-red-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-headset text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">دعم فني 24/7</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        خدمة عملاء متاحة على مدار الساعة لضمان عمل أنظمتك بكفاءة عالية
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+  <!-- Products Section -->
+<section id="products" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">منتجاتنا المتنوعة</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        مجموعة واسعة من كاميرات المراقبة المتطورة لتلبية جميع احتياجاتك الأمنية
+      </p>
+    </div>
+
+    <!-- Products Grid -->
+    <div id="product-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Product 1 -->
+      <div class="group bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="./img/pexels-jakubzerdzicki-27505236.jpg" alt="كاميرات IP"
+          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-125" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">كاميرات IP عالية الدقة</h3>
+          <p class="text-gray-600 mb-4">كاميرات شبكية بدقة 4K مع إمكانية المراقبة عن بعد والتحكم الذكي</p>
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-bold text-primary">من 500 ريال</span>
+            <a href="tel:0565265233"
+              class="btn-primary text-white px-4 py-2 rounded-lg inline-flex items-center">
+              <i class="fas fa-cart-plus ml-1"></i> اطلب الآن
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="group bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="./img/istockphoto-1200998021-612x612.jpg" alt="كاميرات لاسلكية"
+          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-125" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">كاميرات لاسلكية ذكية</h3>
+          <p class="text-gray-600 mb-4">كاميرات لاسلكية سهلة التركيب مع تطبيق ذكي للمراقبة من الهاتف</p>
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-bold text-primary">من 300 ريال</span>
+            <a href="tel:0565265233"
+              class="btn-primary text-white px-4 py-2 rounded-lg inline-flex items-center">
+              <i class="fas fa-cart-plus ml-1"></i> اطلب الآن
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="group bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="./img/pexels-scottwebb-430208.jpg" alt="كاميرات PTZ"
+          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-125" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">كاميرات PTZ متحركة</h3>
+          <p class="text-gray-600 mb-4">كاميرات قابلة للحركة والتكبير مع تتبع ذكي للحركة والأهداف</p>
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-bold text-primary">من 800 ريال</span>
+            <a href="tel:0565265233"
+              class="btn-primary text-white px-4 py-2 rounded-lg inline-flex items-center">
+              <i class="fas fa-cart-plus ml-1"></i> اطلب الآن
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="group bg-white rounded-xl shadow-lg overflow-hidden hidden extra-product">
+        <img src="./img/pexels-jakubzerdzicki-26597080.jpg" alt="كاميرا صغيرة"
+          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-125" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">كاميرا صغيرة منزلية</h3>
+          <p class="text-gray-600 mb-4">حجم صغير مع دقة عالية مناسبة للمنازل والمكاتب الصغيرة</p>
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-bold text-primary">من 250 ريال</span>
+            <a href="tel:0565265233"
+              class="btn-primary text-white px-4 py-2 rounded-lg inline-flex items-center">
+              <i class="fas fa-cart-plus ml-1"></i> اطلب الآن
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="group bg-white rounded-xl shadow-lg overflow-hidden hidden extra-product">
+        <img src="./img/pexels-obi-onyeador-1787470-13031831.jpg" alt="كاميرا حرارية"
+          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-125" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">كاميرا حرارية</h3>
+          <p class="text-gray-600 mb-4">كاميرا ليلية مزودة بحساس حراري للرؤية في الظلام التام</p>
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-bold text-primary">من 1000 ريال</span>
+            <a href="tel:0565265233"
+              class="btn-primary text-white px-4 py-2 rounded-lg inline-flex items-center">
+              <i class="fas fa-cart-plus ml-1"></i> اطلب الآن
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="group bg-white rounded-xl shadow-lg overflow-hidden hidden extra-product">
+        <img src="./img/pexels-cottonbro-3205735.jpg" alt="كاميرا مقاومة للماء"
+          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-125" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">كاميرا مقاومة للماء</h3>
+          <p class="text-gray-600 mb-4">كاميرا مصممة لتحمل الظروف الجوية القاسية والأمطار</p>
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-bold text-primary">من 700 ريال</span>
+            <a href="tel:0565265233"
+              class="btn-primary text-white px-4 py-2 rounded-lg inline-flex items-center">
+              <i class="fas fa-cart-plus ml-1"></i> اطلب الآن
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Show More Button -->
+    <div class="text-center mt-12" id="show-more-btn">
+      <button onclick="showMoreProducts()" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105 hover:brightness-110">
+        <i class="fas fa-eye ml-2"></i>
+        عرض جميع المنتجات
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript -->
+<script>
+  function showMoreProducts() {
+    const extraCards = document.querySelectorAll('.extra-product');
+    const showMoreBtn = document.getElementById('show-more-btn');
+
+    extraCards.forEach((card, index) => {
+      card.classList.remove('hidden');
+      card.style.opacity = 0;
+      card.style.transform = 'translateY(20px)';
+      setTimeout(() => {
+        card.style.transition = 'all 0.6s ease';
+        card.style.opacity = 1;
+        card.style.transform = 'translateY(0)';
+      }, 100 * index);
+    });
+
+    showMoreBtn.classList.add('hidden');
+  }
+</script>
+
+
+
+
+    <!-- Why Choose Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">لماذا تختارنا؟</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        نحن الخيار الأول لأنظمة المراقبة في المملكة العربية السعودية
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center ml-4 flex-shrink-0">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">خبرة أكثر من 10 سنوات</h3>
+                                <p class="text-gray-600">في مجال أنظمة المراقبة والأمان في السوق السعودي</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center ml-4 flex-shrink-0">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">فريق فني متخصص</h3>
+                                <p class="text-gray-600">مهندسون وفنيون معتمدون لضمان أعلى جودة في التركيب والصيانة</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-yellow-500 text-white w-12 h-12 rounded-full flex items-center justify-center ml-4 flex-shrink-0">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">ضمان شامل</h3>
+                                <p class="text-gray-600">ضمان لمدة 3 سنوات على جميع المنتجات والخدمات</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-red-500 text-white w-12 h-12 rounded-full flex items-center justify-center ml-4 flex-shrink-0">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">خدمة سريعة</h3>
+                                <p class="text-gray-600">استجابة فورية وخدمة عملاء متاحة 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="./img/istockphoto-1446045839-612x612.jpg" alt="فريق العمل" class="rounded-lg shadow-2xl w-full">
+                    <div class="absolute -top-6 -left-6 bg-primary text-white p-6 rounded-lg shadow-xl">
+                        <div class="text-center">
+                            <p class="text-3xl font-bold">+1000</p>
+                            <p class="text-sm">عميل راضٍ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-10 right-10 w-32 h-32 border border-white rounded-full animate-pulse"></div>
+        <div class="absolute bottom-20 left-20 w-24 h-24 border border-white rounded-full animate-bounce"></div>
+        <div class="absolute top-1/2 left-1/2 w-40 h-40 border border-white rounded-full animate-ping"></div>
+    </div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+        <!-- Header Section -->
+        <div class="text-center mb-16 animate-fade-in">
+            <div class="inline-block mb-6">
+                <i class="fas fa-video text-6xl text-white icon-pulse"></i>
+            </div>
+            <h2 class="text-5xl md:text-6xl font-bold text-white mb-6 animate-slide-up">
+                كاميرات المراقبة المتطورة
+            </h2>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed animate-slide-up" style="animation-delay: 0.2s;">
+                نوفر أحدث أنظمة المراقبة وخدمات الصيانة المتخصصة في جميع أنحاء المملكة العربية السعودية بأعلى معايير الجودة والاحترافية
+            </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <!-- Service Card 1 -->
+            <div class="service-card bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-8 text-center border border-white border-opacity-30 animate-bounce-in">
+                <div class="w-20 h-20 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 floating">
+                    <i class="fas fa-camera text-3xl text-white"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">بيع الكاميرات</h3>
+                <p class="text-blue-100 leading-relaxed">
+                    كاميرات عالية الدقة 4K و 8K مع تقنيات الذكاء الاصطناعي وإمكانيات الرؤية الليلية المتطورة
+                </p>
+                <div class="mt-6">
+                    <span class="inline-block bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                        <i class="fas fa-star mr-2"></i>
+                        جودة عالمية
+                    </span>
+                </div>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="service-card bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-8 text-center border border-white border-opacity-30 animate-bounce-in" style="animation-delay: 0.2s;">
+                <div class="w-20 h-20 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 floating" style="animation-delay: 1s;">
+                    <i class="fas fa-tools text-3xl text-white"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">الصيانة المتخصصة</h3>
+                <p class="text-blue-100 leading-relaxed">
+                    خدمات صيانة شاملة ودعم فني على مدار 24/7 مع فريق متخصص ومعتمد من أكبر الشركات العالمية
+                </p>
+                <div class="mt-6">
+                    <span class="inline-block bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                        <i class="fas fa-clock mr-2"></i>
+                        خدمة 24/7
+                    </span>
+                </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="service-card bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-8 text-center border border-white border-opacity-30 animate-bounce-in" style="animation-delay: 0.4s;">
+                <div class="w-20 h-20 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 floating" style="animation-delay: 2s;">
+                    <i class="fas fa-shield-alt text-3xl text-white"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">أنظمة الحماية</h3>
+                <p class="text-blue-100 leading-relaxed">
+                    حلول أمنية متكاملة تشمل أنظمة الإنذار والتحكم عن بُعد مع تشفير عالي الأمان
+                </p>
+                <div class="mt-6">
+                    <span class="inline-block bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                        <i class="fas fa-lock mr-2"></i>
+                        حماية متقدمة
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+        <!-- Features Section -->
+        <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white border-opacity-20 animate-slide-up">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-4xl font-bold text-white mb-8">لماذا نحن الأفضل؟</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 space-x-reverse">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-2">ضمان شامل لمدة 5 سنوات</h4>
+                                <p class="text-blue-100">ضمان شامل يغطي جميع قطع الغيار والصيانة</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 space-x-reverse">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-users text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-2">فريق متخصص ومعتمد</h4>
+                                <p class="text-blue-100">مهندسون مدربون على أحدث التقنيات العالمية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 space-x-reverse">
+                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-rocket text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-2">تركيب سريع في 24 ساعة</h4>
+                                <p class="text-blue-100">تركيب احترافي وسريع مع اختبار شامل للنظام</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 mx-auto bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center floating">
+                            <i class="fas fa-video text-8xl text-white"></i>
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center animate-bounce">
+                            <i class="fas fa-crown text-2xl text-yellow-800"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Contact Section -->
+        <div class="mt-16 text-center animate-fade-in">
+            <div class="bg-white bg-opacity-15 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-30 inline-block">
+                <h3 class="text-3xl font-bold text-white mb-6">تواصل معنا الآن</h3>
+                <div class="flex flex-wrap justify-center gap-6 mb-8">
+                    <div class="flex items-center bg-white bg-opacity-20 rounded-full px-6 py-3">
+                        <i class="fas fa-phone text-green-400 text-xl ml-3"></i>
+                        <span class="text-white font-semibold">+966 50 123 4567</span>
+                    </div>
+                    <div class="flex items-center bg-white bg-opacity-20 rounded-full px-6 py-3">
+                        <i class="fab fa-whatsapp text-green-400 text-xl ml-3"></i>
+                        <span class="text-white font-semibold">واتساب فوري</span>
+                    </div>
+                    <div class="flex items-center bg-white bg-opacity-20 rounded-full px-6 py-3">
+                        <i class="fas fa-map-marker-alt text-red-400 text-xl ml-3"></i>
+                        <span class="text-white font-semibold">جميع مدن المملكة</span>
+                    </div>
+                </div>
+                <button class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-comments ml-2"></i>
+                    احصل على استشارة مجانية
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">آراء عملائنا</h2>
+                <p class="text-xl text-gray-600">ما يقوله عملاؤنا عن خدماتنا</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        "خدمة ممتازة وفريق محترف. تم تركيب النظام بسرعة وكفاءة عالية. أنصح بهم بشدة."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold ml-4">
+                            أ.م
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-800">أحمد محمد</p>
+                            <p class="text-gray-600 text-sm">صاحب محل تجاري</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        "أسعار مناسبة وجودة عالية. النظام يعمل بكفاءة ممتازة منذ أكثر من سنتين."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold ml-4">
+                            س.ع
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-800">سارة عبدالله</p>
+                            <p class="text-gray-600 text-sm">صاحبة منزل</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        "دعم فني ممتاز وسرعة في الاستجابة. فريق محترف ومتعاون جداً."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-white font-bold ml-4">
+                            خ.ص
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-800">خالد صالح</p>
+                            <p class="text-gray-600 text-sm">مدير شركة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">تواصل معنا</h2>
+                <p class="text-xl text-blue-100">نحن هنا لخدمتك على مدار الساعة</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-8">معلومات التواصل</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="bg-white text-primary w-12 h-12 rounded-full flex items-center justify-center ml-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">الهاتف</p>
+                                <p class="text-blue-100">+966 50 000 0000</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="bg-white text-primary w-12 h-12 rounded-full flex items-center justify-center ml-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">البريد الإلكتروني</p>
+                                <p class="text-blue-100">info@surveillance-sa.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="bg-white text-primary w-12 h-12 rounded-full flex items-center justify-center ml-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">العنوان</p>
+                                <p class="text-blue-100">الرياض، المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="bg-white text-primary w-12 h-12 rounded-full flex items-center justify-center ml-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">ساعات العمل</p>
+                                <p class="text-blue-100">السبت - الخميس: 8:00 ص - 10:00 م</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white text-gray-800 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">احصل على استشارة مجانية</h3>
+                    
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">الاسم الكامل</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary" placeholder="أدخل اسمك الكامل">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">رقم الهاتف</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary" placeholder="أدخل رقم هاتفك">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">البريد الإلكتروني</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary" placeholder="أدخل بريدك الإلكتروني">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">نوع الخدمة المطلوبة</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary">
+                                <option>اختر نوع الخدمة</option>
+                                <option>بيع كاميرات مراقبة</option>
+                                <option>تركيب نظام مراقبة</option>
+                                <option>صيانة نظام موجود</option>
+                                <option>استشارة أمنية</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">تفاصيل إضافية</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary" placeholder="أخبرنا عن احتياجاتك..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full btn-primary text-white py-4 rounded-lg font-semibold text-lg">
+                            <i class="fas fa-paper-plane ml-2"></i>
+                            إرسال الطلب
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-video text-primary text-2xl ml-2"></i>
+                        <span class="text-xl font-bold">كاميرات السعودية</span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        شركة رائدة في مجال أنظمة المراقبة والأمان في المملكة العربية السعودية
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition duration-300">الرئيسية</a></li>
+                        <li><a href="#products" class="text-gray-300 hover:text-white transition duration-300">منتجاتنا</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition duration-300">خدماتنا</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition duration-300">من نحن</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition duration-300">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">خدماتنا</h3>
+                    <ul class="space-y-2">
+                        <li><span class="text-gray-300">بيع كاميرات المراقبة</span></li>
+                        <li><span class="text-gray-300">التركيب والصيانة</span></li>
+                        <li><span class="text-gray-300">استشارات أمنية</span></li>
+                        <li><span class="text-gray-300">دعم فني 24/7</span></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">تابعنا</h3>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-700 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-green-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-700 transition duration-300">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">
+                    © 2024 كاميرات السعودية. جميع الحقوق محفوظة.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
