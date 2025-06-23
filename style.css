@@ -1,4 +1,8 @@
      
+         html {
+    scroll-behavior: smooth;
+  
+     }
         body {
             font-family: 'Cairo', sans-serif;
         }
@@ -693,3 +697,8 @@
         .category-icon:hover {
             transform: rotate(360deg) scale(1.1);
         }
+
+
+
+        /*  */
+        
