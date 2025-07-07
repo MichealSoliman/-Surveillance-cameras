@@ -1,13 +1,13 @@
      
          html {
-    scroll-behavior: smooth;
+         scroll-behavior: smooth;
   
      }
         body {
             font-family: 'Cairo', sans-serif;
         }
         .hero-bg {
-            background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(5, 150, 105, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            background: linear-gradient(135deg, #eb232a, rgba(235, 40, 46, 1)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
             background-size: cover;
             background-position: center;
         }
@@ -33,12 +33,12 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
         .btn-primary {
-            background: linear-gradient(135deg, #1e3a8a, #059669);
+            background: linear-gradient(135deg, #eb232a, #eb232a);
             transition: all 0.3s ease;
         }
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(30, 58, 138, 0.3);
+            box-shadow: 0 10px 20px #eb232a;
         }
          * {
             font-family: 'Cairo', sans-serif;
@@ -84,7 +84,7 @@
         }
         
         .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #eb232a;
         }
         
         .icon-pulse {
@@ -160,10 +160,11 @@
         }
         
         .filter-btn.active {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #eb232a 0%, #eb232a 100%);
             color: white;
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+         
+;
         }
         
         .lightbox {
@@ -214,7 +215,7 @@
         .stats-counter {
             font-size: 2.5rem;
             font-weight: 900;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #eb232a;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -257,7 +258,7 @@
         }
         
         .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #eb232a 0%,rgb(170, 50, 54) 100%);
         }
         
         .portfolio-badge {
@@ -296,7 +297,7 @@
         }
 
         .tech-card {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e40af 100%);
+            background: #f2af1d;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
@@ -341,7 +342,7 @@
 
         .animated-border {
             position: relative;
-            background: linear-gradient(45deg, #3b82f6, #1e40af, #3b82f6);
+            background: #eb232a;
             background-size: 400% 400%;
             animation: gradientShift 3s ease infinite;
         }
@@ -388,7 +389,7 @@
         }
 
         .tech-progress {
-            background: linear-gradient(90deg, #3b82f6 0%, #1e40af 100%);
+            background: linear-gradient(90deg, ##eb232a 0%, ##eb232a 100%);
             height: 8px;
             border-radius: 4px;
             animation: progressFill 2s ease-in-out;
@@ -400,7 +401,7 @@
         }
 
         .solution-badge {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            background: #eb232a;
             color: white;
             padding: 4px 12px;
             border-radius: 20px;
@@ -409,7 +410,7 @@
         }
 
         .interactive-button {
-            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            background: linear-gradient(135deg, #eb232a 0%, #eb232a 100%);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -461,7 +462,7 @@
         }
         
         .gradient-bg {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 25%, #6366f1 50%, #8b5cf6 75%, #d97706 100%);
+            background: #eb232a;
         }
         
         .glass-effect {
@@ -529,18 +530,18 @@
         }
         
         .text-gradient {
-            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #d97706);
+            background: linear-gradient(45deg, #eb232a,rgb(152, 38, 42));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
         
         .border-gradient {
-            border-image: linear-gradient(45deg, #3b82f6, #8b5cf6, #d97706) 1;
+            border-image: linear-gradient(45deg, #eb232a, #eb232a,) 1;
         }
         
         .number-badge {
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            background: linear-gradient(135deg, #eb232a, #eb232a);
             color: white;
             width: 35px;
             height: 35px;
@@ -574,9 +575,9 @@
 
 
         :root {
-            --primary-color: #1e40af;
-            --secondary-color: #3b82f6;
-            --accent-color: #f59e0b;
+            --primary-color: #eb232a;
+            --secondary-color: #eb232a;
+            --accent-color: #eb232a ;
             --dark-color: #1f2937;
         }
 
@@ -593,7 +594,7 @@
         }
 
         .price-tag {
-            background: linear-gradient(135deg, var(--accent-color), #f97316);
+            background: linear-gradient(135deg, var(--accent-color), #eb232a);
             animation: pulse 2s infinite;
         }
 
@@ -636,7 +637,7 @@
         }
 
         .hero-background {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #eb232a 0%, #eb232a 100%);
             position: relative;
             overflow: hidden;
         }

@@ -57,10 +57,14 @@
                 <!-- Logo -->
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <div class="flex items-center">
-                           <img src="./img/951fbb41-b48c-4794-8b66-ab291d46a37b.jpeg" class="w-20 h-20 object-cover rounded-full" alt=" عين الصقر والامان">
+                        <div class="flex items-center ">
+                            <img 
+                            src="https://surveillancecamerasa.com/wp-content/uploads/2024/03/Smart-Vision-01-1.png" 
+                            alt="عين الصقر والأمان"
+                            class="w-20 h-15 object-cover rounded  shadow-md border-2 border-gray-300"
+                            />
 
-                            <span class="text-xl font-bold text-gray-800"> عين الصقر والامان</span>
+                            <span class="text-xl font-bold text-gray-800 p-2"> عين الصقر والامان</span>
                         </div>
                     </div>
                 </div>
@@ -119,8 +123,8 @@
 
                         نوفر أحدث تقنيات كاميرات المراقبة مع خدمات التركيب والصيانة الاحترافية في جميع أنحاء المملكة العربية السعودية
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="tel:+0565265233" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg text-center">
+                    <div class="flex flex-col sm:flex-row gap-4 mt-2">
+                        <a href="tel:+0565265233" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg text-center hover:bg-white hover:text-primary transition duration-300">
                             <i class="fas fa-phone ml-2"></i>
                             احصل على استشارة مجانية
                         </a>
@@ -851,13 +855,13 @@
             if (btn.textContent.includes('إضافة للسلة')) {
                 btn.addEventListener('click', function() {
                     this.innerHTML = '<i class="fas fa-check ml-2"></i>تم الإضافة';
-                    this.classList.remove('bg-blue-600', 'hover:bg-blue-700');
-                    this.classList.add('bg-green-600', 'hover:bg-green-700');
+                    this.classList.remove('bg-[#eb282e]', 'hover:bg-blue-700');
+                    this.classList.add('bg-[#eb282e]', 'hover:bg-green-700');
                     
                     setTimeout(() => {
                         this.innerHTML = '<i class="fas fa-cart-plus ml-2"></i>إضافة للسلة';
-                        this.classList.remove('bg-green-600', 'hover:bg-green-700');
-                        this.classList.add('bg-blue-600', 'hover:bg-blue-700');
+                        this.classList.remove('bg-[#eb282e]', 'hover:bg-green-700');
+                        this.classList.add('bg-[#eb282e]', 'hover:bg-blue-700');
                     }, 2000);
                 });
             }
@@ -880,7 +884,7 @@
             });
         });
     </script>
-    <section class="py-16 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 relative overflow-hidden">
+    <section class="py-16 py-16 bg-[#eb282e]  relative overflow-hidden">
     <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-10">
         <div class="absolute top-10 right-10 w-32 h-32 border border-white rounded-full animate-pulse"></div>
@@ -1030,7 +1034,7 @@
                         <span class="text-white font-semibold">جميع مدن المملكة</span>
                     </div>
                 </div>
-                <button class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <button class="bg-gradient-to-r bg-[#eb282e] hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
                     <i class="fas fa-comments ml-2"></i>
                     احصل على استشارة مجانية
                 </button>
@@ -1126,106 +1130,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <!-- <section id="contact" class="py-20 bg-primary text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">تواصل معنا</h2>
-                <p class="text-xl text-blue-100">نحن هنا لخدمتك على مدار الساعة</p>
-            </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                
-                <div>
-                    <h3 class="text-2xl font-bold mb-8">معلومات التواصل</h3>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-center">
-                            <div class="bg-white text-primary w-12 h-12 rounded-full flex items-center justify-center ml-4">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold">الهاتف</p>
-                                <p class="text-blue-100">+966 50 000 0000</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center">
-                            <div class="bg-white text-primary w-12 h-12 rounded-full flex items-center justify-center ml-4">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold">البريد الإلكتروني</p>
-                                <p class="text-blue-100">info@surveillance-sa.com</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center">
-                            <div class="bg-white text-primary w-12 h-12 rounded-full flex items-center justify-center ml-4">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold">العنوان</p>
-                                <p class="text-blue-100">الرياض، المملكة العربية السعودية</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center">
-                            <div class="bg-white text-primary w-12 h-12 rounded-full flex items-center justify-center ml-4">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold">ساعات العمل</p>
-                                <p class="text-blue-100">السبت - الخميس: 8:00 ص - 10:00 م</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white text-gray-800 p-8 rounded-xl">
-                    <h3 class="text-2xl font-bold mb-6 text-primary">احصل على استشارة مجانية</h3>
-                    
-                    <form class="space-y-6">
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">الاسم الكامل</label>
-                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary" placeholder="أدخل اسمك الكامل">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">رقم الهاتف</label>
-                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary" placeholder="أدخل رقم هاتفك">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">البريد الإلكتروني</label>
-                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary" placeholder="أدخل بريدك الإلكتروني">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">نوع الخدمة المطلوبة</label>
-                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary">
-                                <option>اختر نوع الخدمة</option>
-                                <option>بيع كاميرات مراقبة</option>
-                                <option>تركيب نظام مراقبة</option>
-                                <option>صيانة نظام موجود</option>
-                                <option>استشارة أمنية</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">تفاصيل إضافية</label>
-                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary" placeholder="أخبرنا عن احتياجاتك..."></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full btn-primary text-white py-4 rounded-lg font-semibold text-lg">
-                            <i class="fas fa-paper-plane ml-2"></i>
-                            إرسال الطلب
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
      <section class="py-20 px-4" id="work-us">
         <div class="max-w-7xl mx-auto">
@@ -1479,13 +1384,7 @@
           
         </div>
     </section>
-      <!-- Lightbox Modal -->
-    <!-- <div class="lightbox" id="lightbox">
-        <div class="lightbox-content">
-            <span class="lightbox-close" id="lightboxClose">&times;</span>
-            <img src="" alt="" id="lightboxImg">
-        </div>
-    </div> -->
+   
      <script>
         // Intersection Observer for animations
         const observerOptions = {
@@ -1645,7 +1544,7 @@
 
 
 <!-- Main Technology Section -->
-    <section class="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900">
+    <section class="py-20 bg-[#eb282e] to-indigo-900">
         <div class="container mx-auto px-4">
             <!-- Section Header -->
             <div class="text-center mb-16">
@@ -1740,19 +1639,19 @@
                             <tr class="border-b-2 border-blue-200">
                                 <th class="text-right p-4 text-gray-800 font-bold">المميزات</th>
                                 <th class="text-center p-4">
-                                    <div class="bg-blue-600 text-white p-3 rounded-lg">
+                                    <div class="bg-[#eb282e] text-white p-3 rounded-lg">
                                         <i class="fas fa-home mb-2 text-2xl"></i>
                                         <div class="font-bold">الحل المنزلي</div>
                                     </div>
                                 </th>
                                 <th class="text-center p-4">
-                                    <div class="bg-green-600 text-white p-3 rounded-lg">
+                                    <div class="bg-[#eb282e] text-white p-3 rounded-lg">
                                         <i class="fas fa-building mb-2 text-2xl"></i>
                                         <div class="font-bold">الحل التجاري</div>
                                     </div>
                                 </th>
                                 <th class="text-center p-4">
-                                    <div class="bg-purple-600 text-white p-3 rounded-lg">
+                                    <div class="bg-[#eb282e] text-white p-3 rounded-lg">
                                         <i class="fas fa-industry mb-2 text-2xl"></i>
                                         <div class="font-bold">الحل الصناعي</div>
                                     </div>
@@ -1813,7 +1712,7 @@
                 <!-- Smart Home Solution -->
                 <div class="group bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div class="text-center mb-6">
-                        <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <div class="bg-[#eb282e] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-home text-2xl text-white"></i>
                         </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-2">المنازل الذكية</h4>
@@ -1838,7 +1737,7 @@
                 <!-- Business Solution -->
                 <div class="group bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div class="text-center mb-6">
-                        <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <div class="bg-[#eb282e] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-building text-2xl text-white"></i>
                         </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-2">الشركات والمكاتب</h4>
@@ -1863,7 +1762,7 @@
                 <!-- Industrial Solution -->
                 <div class="group bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div class="text-center mb-6">
-                        <div class="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <div class="bg-[#eb282e] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-industry text-2xl text-white"></i>
                         </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-2">المصانع والمنشآت</h4>
@@ -2065,7 +1964,7 @@
                 <!-- Feature 1 -->
                 <div class="bg-white rounded-xl shadow-lg p-8 card-hover border border-gray-100">
                     <div class="text-center">
-                        <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r bg-[#eb282e] rounded-full flex items-center justify-center">
                             <i class="fas fa-video text-white text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-4">دقة 4K فائقة الوضوح</h3>
@@ -2078,7 +1977,7 @@
                 <!-- Feature 2 -->
                 <div class="bg-white rounded-xl shadow-lg p-8 card-hover border border-gray-100">
                     <div class="text-center">
-                        <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r bg-[#eb282e] rounded-full flex items-center justify-center">
                             <i class="fas fa-moon text-white text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-4">رؤية ليلية متطورة</h3>
@@ -2091,7 +1990,7 @@
                 <!-- Feature 3 -->
                 <div class="bg-white rounded-xl shadow-lg p-8 card-hover border border-gray-100">
                     <div class="text-center">
-                        <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r bg-[#eb282e] rounded-full flex items-center justify-center">
                             <i class="fas fa-mobile-alt text-white text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-4">تحكم ذكي عن بعد</h3>
@@ -2104,7 +2003,7 @@
                 <!-- Feature 4 -->
                 <div class="bg-white rounded-xl shadow-lg p-8 card-hover border border-gray-100">
                     <div class="text-center">
-                        <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r bg-[#eb282e] rounded-full flex items-center justify-center">
                             <i class="fas fa-brain text-white text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-4">ذكاء اصطناعي</h3>
@@ -2117,7 +2016,7 @@
                 <!-- Feature 5 -->
                 <div class="bg-white rounded-xl shadow-lg p-8 card-hover border border-gray-100">
                     <div class="text-center">
-                        <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r bg-[#eb282e] rounded-full flex items-center justify-center">
                             <i class="fas fa-volume-up text-white text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-4">صوت ثنائي الاتجاه</h3>
@@ -2130,7 +2029,7 @@
                 <!-- Feature 6 -->
                 <div class="bg-white rounded-xl shadow-lg p-8 card-hover border border-gray-100">
                     <div class="text-center">
-                        <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r bg-[#eb282e] rounded-full flex items-center justify-center">
                             <i class="fas fa-shield-alt text-white text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-4">مقاومة العوامل الجوية</h3>
@@ -2165,7 +2064,7 @@
                 <h2 class="text-5xl md:text-6xl font-bold text-gradient mb-4 leading-tight">
                     الأسئلة الشائعة
                 </h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6 rounded-full"></div>
+                <div class="w-24 h-1 bg-gradient-to-r bg-[#eb282e] mx-auto mb-6 rounded-full"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                     إجابات شاملة على جميع استفساراتك حول كاميرات المراقبة وخدمات التركيب والصيانة
                 </p>
@@ -2184,7 +2083,7 @@
                     <button class="faq-toggle w-full text-right px-4 sm:px-6 lg:px-8 py-4 sm:py-6 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 touch-target mobile-optimized" data-target="faq1">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center">
-                                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center ml-3 sm:ml-4">
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r bg-[#eb282e] rounded-full flex items-center justify-center ml-3 sm:ml-4">
                                     <i class="fas fa-camera text-white text-sm sm:text-base"></i>
                                 </div>
                                 <h3 class="text-base sm:text-lg lg:text-xl font-semibold text-gray-800 leading-tight">
@@ -2640,7 +2539,7 @@
                         <i class="fas fa-phone ml-2"></i>
                         اتصل الآن
                     </a>
-                    <a href="https://wa.me/0530341568" class="bg-green-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg w-full sm:w-auto">
+                    <a href="https://wa.me/0530341568" class="bg-green-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-[#eb282e] transition-all duration-300 transform hover:scale-105 shadow-lg w-full sm:w-auto">
                         <i class="fab fa-whatsapp ml-2"></i>
                         واتساب
                     </a>
@@ -2736,14 +2635,14 @@
 
   <!-- زر واتساب -->
   <a href="https://wa.me/009660530341568" target="_blank"
-     class="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full shadow-lg transition duration-300">
+     class="flex items-center gap-2 bg-[#eb282e] hover:bg-green-700 text-white px-5 py-2 rounded-full shadow-lg transition duration-300">
     <i class="fab fa-whatsapp text-lg"></i>
     واتساب
   </a>
 
   <!-- زر الاتصال -->
   <a href="tel:+0530341568"
-     class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full shadow-lg transition duration-300">
+     class="flex items-center gap-2 bg-[#eb282e] hover:bg-blue-700 text-white px-5 py-2 rounded-full shadow-lg transition duration-300">
     <i class="fas fa-phone text-lg"></i>
     اتصال
   </a>
@@ -2792,7 +2691,7 @@
                 <div>
                     <h3 class="text-lg font-bold mb-4">تابعنا</h3>
                     <div class="flex space-x-4 space-x-reverse">
-                        <a href="#" class="bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
+                        <a href="#" class="bg-[#eb282e] w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="#" class="bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-500 transition duration-300">
@@ -2801,7 +2700,7 @@
                         <a href="#" class="bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-700 transition duration-300">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="bg-green-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-700 transition duration-300">
+                        <a href="#" class="bg-[#eb282e] w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-700 transition duration-300">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
